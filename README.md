@@ -19,6 +19,10 @@ python -m unittest discover -s tests -v
 
 For a byte-for-byte rebuild, pass `freeze --expect-hash 976ac6b3df87155bb2dcb446dde5adfc7afd9ef870d574bb24c592babc316a13`. The benchmark root and its sibling `source` directory must stay together. Use the global `--benchmark`, `--models`, `--runs`, and `--output` options before the command to change their locations.
 
+## Continuous integration
+
+The Benchmark CI workflow runs the fixture-based unit tests on Python 3.12 for pushes and pull requests. It installs NumPy at the version pinned in `requirements.txt`. The tests use temporary files and fixtures, so the workflow needs no QASPER archives, model weights, or reviewer data.
+
 ## Run the retrieval study
 
 ```bash
