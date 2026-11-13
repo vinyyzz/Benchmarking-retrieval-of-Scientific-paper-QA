@@ -9,3 +9,6 @@ release/
 .streamlit/
 results/
 output/
+PROGRESS.md
+CLAUDE.md
+AGENTS.md
